@@ -1,5 +1,4 @@
-from datebase.DB import Table
-from implementation.factory import StockFactory
+from entities.factory import StockFactory
 from entities.management import Stock
 import pandas as pd
 
@@ -58,6 +57,18 @@ print(obj.get_table())
 obj.exit(['C', 'NUN', '10-2-19', 2.0, 34.00])"""
 
 
-obj = Stock('G', 'NUM', 10, 10.5)
+"""obj = Stock('G', 'NUM', 10, 10.5)
 
 StockFactory().exit(obj)
+"""
+"""
+new = pd.DataFrame(columns=['Produto', 'Categoria', 'Data de registro', 'Quantidade', 'Valor/kg'])
+new = new.append({j: i for i, j in zip(['C', 'NUN', '10-2-19', 2.0, 34.00], new.columns)}, ignore_index=True)
+new = new.append({j: i for i, j in zip(['C', 'NUN', '10-2-19', 2.0, 34.00], new.columns)}, ignore_index=True)
+new = new.append({j: i for i, j in zip(['C', 'NUN', '10-2-19', 2.0, 34.00], new.columns)}, ignore_index=True)
+print(new)"""
+
+new = StockFactory()
+
+new.add(Stock('K', 'NUM', 10, 10.5))
+
