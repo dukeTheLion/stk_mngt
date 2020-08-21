@@ -7,4 +7,5 @@ class StockFactory:
             archive.write('\n' + ','.join([str(i) for i in obj.get_data()]))
 
     def exit(self, obj):
-        return
+        with open(self.__path, 'a') as archive:
+            return

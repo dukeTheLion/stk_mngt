@@ -68,7 +68,11 @@ new = new.append({j: i for i, j in zip(['C', 'NUN', '10-2-19', 2.0, 34.00], new.
 new = new.append({j: i for i, j in zip(['C', 'NUN', '10-2-19', 2.0, 34.00], new.columns)}, ignore_index=True)
 print(new)"""
 
-new = StockFactory()
+with open('Tabelas/Estoque.csv', 'r') as archive:
+    for i in archive.readlines():
+        print(i.split(','))
 
-new.add(Stock('K', 'NUM', 10, 10.5))
+#new = StockFactory()
+
+#new.add(Stock('K', 'NUM', 10, 10.5))
 
