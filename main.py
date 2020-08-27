@@ -65,7 +65,7 @@ new = new.append({j: i for i, j in zip(['C', 'NUN', '10-2-19', 2.0, 34.00], new.
 new = new.append({j: i for i, j in zip(['C', 'NUN', '10-2-19', 2.0, 34.00], new.columns)}, ignore_index=True)
 print(new)"""
 
-"""new = StockFactory()
+new = StockFactory()
 
-new.add(Stock('K', 'NUM', 11, 101.5))"""
+new.add(Stock('A', 'NUM', 2, 15.34))
 
