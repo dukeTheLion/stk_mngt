@@ -47,3 +47,14 @@ class StockFactory:
         with open(self.__path, 'w') as archive:
             for i in oppst:
                 archive.write(','.join(i))
+
+
+class HistoryFactory:
+    def __init__(self):
+        self.__path = 'Tabelas/Historico.csv'
+
+    def add(self):
+        return
+
+    def exit(self):
+        return

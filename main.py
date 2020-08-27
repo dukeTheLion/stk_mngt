@@ -48,13 +48,11 @@ dic = dict(zip(head, lista))
 
 print(dic)"""
 
-
 """obj = StockFactory('Tabelas/Estoque.csv')
 
 print(obj.get_table())
 
 obj.exit(['C', 'NUN', '10-2-19', 2.0, 34.00])"""
-
 
 """obj = Stock('G', 'NUM', 10, 10.5)
 
@@ -67,9 +65,7 @@ new = new.append({j: i for i, j in zip(['C', 'NUN', '10-2-19', 2.0, 34.00], new.
 new = new.append({j: i for i, j in zip(['C', 'NUN', '10-2-19', 2.0, 34.00], new.columns)}, ignore_index=True)
 print(new)"""
 
+"""new = StockFactory()
 
-
-new = StockFactory()
-
-new.add(Stock('K', 'NUM', 11, 101.5))
+new.add(Stock('K', 'NUM', 11, 101.5))"""
 
